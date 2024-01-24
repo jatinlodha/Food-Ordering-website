@@ -1,0 +1,214 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    text-align: center;
+position: relative;
+top: 0px;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    padding: 0px;
+}
+
+/* CSS Varibale */
+:root{
+    --navbar-height: 59px;
+ }
+
+
+/* Navigation bar: logo and image */
+#logo{
+    margin: 10px 30px;
+}
+#logo img{
+    height: 35px;
+    margin: 3px 5px;
+}
+
+/* Navigation bar : list styling */
+
+ #navbar ul{
+    display: flex;
+ }
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    font-family:  sans-serif;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    margin: 5px;
+    padding: 10px 15px ;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 79px 200px;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url("../img/bg1.jpg") no-repeat center center/cover ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Services section */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    padding: 34px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid brown;
+    background-color: rgb(239, 233, 233);
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* client section */
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg2.jpg');
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#client{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 120px;
+}
+.client-item{
+    padding: 35px;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../img/contact.webp") no-repeat center center/cover;
+    width: 100%;
+    height: 310px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
+/* Utility classes */
+.h-primary{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    padding: 12px;
+    text-align: center;
+}
+.h-secondary{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    padding: 12px;
+    text-align: center;
+}
+.btn{
+    padding: 7px 20px;
+    margin: 15px;
+    border: 2px solid white;
+    background-color: rgb(142, 8, 8);
+    color: white;
+    font-size: 0.88rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
